@@ -64,14 +64,14 @@
 </head>
 
 <body>
+    <div>
+        <script type="text/javascript">
+        function onTelegramAuth(user) {
+            alert('Logged in as ' + user.first_name + ' ' + user.last_name + ' (' + user.id + (user.username ? ', @' + user.username : '') + ')');
+        }
+        </script>
+    </div>
     <main>
-        <div>
-            <script type="text/javascript">
-            function onTelegramAuth(user) {
-                alert('Logged in as ' + user.first_name + ' ' + user.last_name + ' (' + user.id + (user.username ? ', @' + user.username : '') + ')');
-            }
-            </script>
-        </div>
         <div align="center">
             <a href="https://ton.org/"><img width="48" src="./assets/tapps.png" alt="logo of telegram web apps"></a>
         </div>
