@@ -182,6 +182,16 @@
             manifestUrl: 'https://shirie.github.io/tg_one/ton_manifest.json',
             buttonRootId: 'ton-connect'
         });
+
+        //const walletsList = await tonConnectUI.getWallets();
+        const currentWallet = tonConnectUI.wallet;
+        alert(currentWallet)
+        const currentWalletInfo = tonConnectUI.walletInfo;
+        alert(currentWalletInfo)
+        const currentAccount = tonConnectUI.account;
+        alert(currentAccount)
+        const currentIsConnectedStatus = tonConnectUI.connected;
+        alert(currentIsConnectedStatus)
     </script>
 </body>
 </html>
